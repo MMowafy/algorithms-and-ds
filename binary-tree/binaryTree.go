@@ -17,7 +17,7 @@ func (tree *BinaryTree) LevelOrderTraversal() {
 	if tree.Root == nil {
 		return
 	}
-	queue := []*Node{}
+	var queue []*Node
 	queue = append(queue, tree.Root)
 	for len(queue) > 0 {
 		node := queue[0]
